@@ -16,3 +16,6 @@
     border: solid 2px black;
 }
 
+.pixel-filled {
+    background-color: black;
+}

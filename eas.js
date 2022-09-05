@@ -15,6 +15,17 @@ function gridLoad(resolution)
         gridContainer.appendChild(row);
     }
 }
-
 gridLoad(16);
+
+const grid = document.getElementById('grid-container');
+for (const row of grid.children) 
+{
+    for(const pixel of row.children)
+    {
+        pixel.addEventListener('mouseover', (e) => {
+            e.target.classList.add('pixel-filled');
+        })
+    }
+}
+
 
