@@ -17,8 +17,14 @@ function gridLoad(resolution)
         gridContainer.appendChild(row); //Append the row of pixels to the grid container
     }
 }
-gridLoad(16);
 
+function resize()
+{
+    var size = window.prompt("Grid size: ");
+    gridLoad(size)
+}
+
+resize();
 
 const grid = document.getElementById('grid-container'); //Selects grid-container 
 for (const row of grid.children) //For each row in the container 
